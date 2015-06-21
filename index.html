@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title></title>
+    <title>Time to market</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/night.css" id="theme">
 
+
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -29,6 +30,7 @@
 		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName( 'head' )[0].appendChild( link );
 
+
     </script>
 
     <!--[if lt IE 9]>
@@ -37,25 +39,12 @@
 
     <style type="text/css">
         section[data-background] h1, section[data-background] h3 {
-        text-shadow: 2px 2px 30px rgba(55, 18, 0, 1);
+            text-shadow: 2px 2px 30px rgba(55, 18, 0, 1);
         }
-        .reveal strong {
-        color: green;
-        }
-        .reveal .orange {
-        color: orange;
-        }
-        .reveal .red {
-        color: red;
-        }
-        .reveal .green {
-        color: green;
-        }
-        .reveal .purple {
-        color: purple;
-        }
-        .reveal .yellow {
-        color: yellow;
+        section[data-background] blockquote {
+            background: white;
+            opacity: 0.9;
+            color: black;
         }
     </style>
 
@@ -67,88 +56,106 @@
     <div class="slides">
         <section>
             <h1>on improving time to market</h1>
-            <h3><a href="https://twitter.com/losneanu">@losneanu</a> from <a href="http://www.cegeka.com/en/">cegeka</a></h3>
+
+            <h3><a href="https://twitter.com/losneanu">@losneanu</a> from <a href="http://www.cegeka.com/en/">cegeka</a>
+            </h3>
         </section>
         <section data-background="images/clustering.jpg">
             <h1>time to market</h1>
             <aside class="notes">
-                <h3>Definition</h3>
-
-                <p>As a Product Owner, I want my feature in production as soon as possible, so I can improve my product
-                    and be one step ahead of competition.</p>
-
-                <p>Time to market is the length of time taken in product development process from product idea to the
-                    finished product. It is a critical component of time based competition.</p>
-
-                <p>Definition vary cross the market because of business processes and complexities.
                 <ul>
-                    <li>Beginning of the period of TTM: definition of started</li>
-                    <li>Ending of the period of TTM: definition of done</li>
-                </ul>
-
-                <p>Reasons to improve TTM</p>
-
-                <ul>
-                    <li>Pure speed</li>
-                    <li>More predictable schedules</li>
-                    <li>Minimizing resources</li>
-                    <li>Flexibility to make changes</li>
-                    <li>Increased total revenue</li>
+                    <li>product owner, feature, product</li>
+                    <li>time from idea to $</li>
+                    <li>improve ttm for speed, predictable schedule, minimize resources</li>
+                    <li>definition of started, definition of done</li>
                 </ul>
             </aside>
         </section>
         <section data-background="images/pair-programming-monitor-in-center.jpg">
             <h1>mindset</h1>
             <aside class="notes">
-                <h3>Experimentation</h3>
-
-                <p>As a Product Owner, I want do as many experiments as possible, so I can collect feedback and make
-                    informed decisions.</p>
-
-                <p>It applies to the product lifecycle, but why not to the feature life cycle as well?</p>
-
-                <p>Complex steps, why not reduce/eliminate them?</p>
                 <ul>
-                    <li>Lean Startup's definition of done</li>
+                    <li>experiments, empiricism</li>
+                    <li>reduce complexity, improve predictability</li>
+                    <li>lean startup's definition of done</li>
                 </ul>
             </aside>
         </section>
+        <section data-background="images/eric-ries.jpg">
+            <blockquote cite="https://www.goodreads.com/quotes/451092-the-only-way-to-win-is-to-learn-faster-than" style="top:300px">
+                &ldquo;The only way to win is to learn faster than everyone else.&rdquo;
+            </blockquote>
+        </section>
         <section data-background="images/build-measure-learn.jpg">
             <aside class="notes">
-                <h3>Feedback loop</h3>
-
-                <p>As a Product Owner, I want do as many experiments as possible, so I can collect feedback and make
-                    informed decisions.</p>
-
                 <ul>
+                    <li>feedback loop</li>
                     <li>eliminate uncertainty</li>
                     <li>validated learning</li>
-                    <li>control</li>
-                    <li>prediction</li>
+                    <li>control and prediction</li>
                 </ul>
             </aside>
         </section>
         <section data-background="images/retro-360.jpg">
             <h1>culture</h1>
             <aside class="notes">
-                <h3>Empowerment</h3>
-
-                <p>As a team, we want to be empowered to do what we think is right, so we can deliver Product Owner's
-                    vision.</p>
+                <ul>
+                    <li>empowerment, ownership, communication, feedback, knowledge, kaizen</li>
+                </ul>
             </aside>
         </section>
-        <section>
-            <h1>showcase</h1>
+        <section data-background="images/agile-meeting.jpg">
+            <blockquote cite="http://agilemanifesto.org/">
+                &ldquo;Working software over comprehensive documentation.&rdquo;
+            </blockquote>
         </section>
-        <section>
+        <section data-background="images/pair-programming.jpg">
+            <h1>showcase</h1>
+            <aside class="notes">
+                <ul>
+                    <li>at cegeka we're finding ways to apply these ideas</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/information-radiator.jpg">
+            <aside class="notes">
+                <ul>
+                    <li>visualization</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/cegeka-way.png">
+            <aside class="notes">
+                <ul>
+                    <li>devops, xp, pair programming, continuous delivery</li>
+                    <li>doing good, to improve</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/vision.jpg">
             <h1>call to action</h1>
+            <aside class="notes">
+                <ul>
+                    <li>challenge, apply what you've learned today at this conference</li>
+                </ul>
+            </aside>
         </section>
         <section>
             <h2>credits</h2>
             <ul>
                 <li>
-                    Build measure learn picture by <a href="http://inside.envato.com/how-we-built-a-lean-startup-inside-a-200-person-company/">Layla Foord</a>
+                    Build measure learn picture by
+                    <a href="http://inside.envato.com/how-we-built-a-lean-startup-inside-a-200-person-company/">
+                        Layla Foord
+                    </a>
                 </li>
+                <li>
+                    Eric Ries's picture from
+                    <a href="http://pitchengine.com/pitches/5480aac0-6386-41fb-8acc-1dc29c4da436">
+                        Pitchengine
+                    </a>
+                </li>
+                <li><a href="http://agilemanifesto.org/">Manifesto for Agile Software Development</a></li>
             </ul>
         </section>
         <section>
@@ -185,6 +192,7 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 
 
 </script>
