@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        section[data-background] h1, section[data-background] h3 {
+        text-shadow: 2px 2px 30px rgba(55, 18, 0, 1);
+        }
+        .reveal strong {
+        color: green;
+        }
+        .reveal .orange {
+        color: orange;
+        }
+        .reveal .red {
+        color: red;
+        }
+        .reveal .green {
+        color: green;
+        }
+        .reveal .purple {
+        color: purple;
+        }
+        .reveal .yellow {
+        color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section data-background="images/clustering.jpg">
+            <h1>time to market</h1>
+            <aside class="notes">
+                <h3>Definition</h3>
+
+                <p>As a Product Owner, I want my feature in production as soon as possible, so I can improve my product
+                    and be one step ahead of competition.</p>
+
+                <p>Time to market is the length of time taken in product development process from product idea to the
+                    finished product. It is a critical component of time based competition.</p>
+
+                <p>Definition vary cross the market because of business processes and complexities.
+                <ul>
+                    <li>Beginning of the period of TTM: definition of started</li>
+                    <li>Ending of the period of TTM: definition of done</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/pair-programming-monitor-in-center.jpg">
+            <h1>mindset</h1>
+            <aside class="notes">
+                <h3>Experimentation</h3>
+
+                <p>As a Product Owner, I want do as many experiments as possible, so I can collect feedback and make
+                    informed decisions.</p>
+
+                <p>It applies to the product lifecycle, but why not to the feature life cycle as well?</p>
+
+                <p>Complex steps, why not reduce/eliminate them?</p>
+                <ul>
+                    <li>Lean Startup's definition of done</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/build-measure-learn.jpg">
+            <aside class="notes">
+                <h3>Feedback loop</h3>
+
+                <p>As a Product Owner, I want do as many experiments as possible, so I can collect feedback and make
+                    informed decisions.</p>
+
+                <ul>
+                    <li>eliminate uncertainity</li>
+                    <li>validated learning</li>
+                    <li>control</li>
+                    <li>prediction</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background="images/retro-360.jpg">
+            <h1>culture</h1>
+            <aside class="notes">
+                <h3>Empowerment</h3>
+
+                <p>As a team, we want to be empowered to do what we think is right, so we can deliver Product Owner's
+                    vision.</p>
+            </aside>
+        </section>
+        <section>
+            <h1>showcase: Cegeka</h1>
+        </section>
+        <section>
+            <h1>call to action</h1>
+        </section>
+        <section>
+            <h2>credits</h2>
+            <ul>Build measure learn picture by
+                <a href="http://inside.envato.com/how-we-built-a-lean-startup-inside-a-200-person-company/">Layla
+                Foord</a></ul>
+        </section>
+        <section>
+            <h1>takeaways?</h1>
+            <aside class="notes">
+            </aside>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+
+</script>
+
+</body>
+</html>
